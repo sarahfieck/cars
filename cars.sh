@@ -2,14 +2,15 @@
 # cars.sh
 # Sarah Fieck
 
-echo "Type a number between 1-3: "
-echo "Type 1 to enter a new car"
-echo "Type 2 to display the list of cars"
-echo "Type 3 to exit the program."
-read -r Option
-
-while [ "$Option" != 3 ]
+Option=0
+while [ "$Option" -ne "3" ]
 do
+	echo "Car Database - Type a number between 1-3: "
+	echo "Type 1 to enter a new car"
+	echo "Type 2 to display the list of cars"
+	echo "Type 3 to exit the program."
+	read -r Option
+	
 	case $Option in
 		#first option
 		"1") echo "Please enter the year of the car: "
@@ -19,13 +20,13 @@ do
 			echo "Please enter the model of the car: "
 			read -r model
 			newCar="${year}:${make}:${model}"
-			echo "$newCar" >> My_old_cars;;
+			echo "$newCar" >> My_old_cars
+			;;
 		#second option
 		"2") sort My_old_cars;;
 		#third option
-		"3") echo "Thank you! Goodbye"
-			break;;
-		*) echo "Not an option. Please input one of the following numbers."
+		"3") echo "Thank you! Goodbye.";;
+		*) echo "Not an option. Please input one of the following numbers.";;
 	esac
 done
 
