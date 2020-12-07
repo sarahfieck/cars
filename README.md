@@ -12,10 +12,11 @@ This repo will contain a bash script named “cars.sh” that will help a user m
 ## Files
 1. cars.sh
 2. My_old_cars
-3. cars-input
 
 ## Known Errors
-Infinitely repeats, not allowing user to go back to the "menu" after adding a new car/listing cars                                                                                                                                                                                                                                              ## References
+Infinitely repeats, not allowing user to go back to the "menu" after adding a new car/listing cars                                                                      
+
+## References
 *CPSC 298 Day 7 PPt Shell Script Programming
        *Reference for typical shell script and vi format                                                                                                                *CPSC 298 Day 8 PPt: More Shell Programming                                                                                                                             *Github Markdown Cheatsheet
 
