@@ -11,6 +11,7 @@ read -r Option
 while :
 do
 	case $Option in
+		#first option
 		"1")
 			echo "Please enter the year of the car: "
 			read -r year
@@ -20,9 +21,10 @@ do
 			read -r model
 			newcar="${year}:${make}:${model}"
 			echo "$newcar" >> My_old_cars;;
-		
+		#second option
 		"2")
 			sort My_old_cars;;
+		#third option
 		"3") 	
 			echo "Thank you! Goodbye"
 			break;;
